@@ -1,4 +1,4 @@
-# This Repo Branch is a Modification to the Original Project [https://github.com/project-fika/Fika-Plugin]FIKA.
+# This Repo Repo is a Modification to the Original Project [https://github.com/project-fika/Fika-Plugin].
 
 Please, if you (for some goddamn reason) use this modified repository and encounter any errors, bugs, glitches, or if your computer catches fire, do not reach out to anyone (seek professional help if possible) whose name is in this repo.
 
