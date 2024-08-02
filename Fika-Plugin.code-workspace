@@ -26,6 +26,25 @@
 				"label": "Build Full Release",
 				"type": "shell",
 				"command": "./FullReleaseBuild.ps1",
+				"problemMatcher": []
+			},
+			{
+				"label": "Build SPT Backend",
+				"type": "shell",
+				"command": "./BuildSPTBackendOnly.ps1",
+				"problemMatcher": []
+			},
+			{
+				"label": "Build Fika Bephinex Plugin",
+				"type": "shell",
+				"command": "./BuildBephinexPluginOnly.ps1",
+				"problemMatcher": []
+			},
+			{
+				"label": "Build Fika SPT-Plugin",
+				"type": "shell",
+				"command": "./BuildFikaServerPluginOnly.ps1",
+				"problemMatcher": []
 			}
 		]
 	},

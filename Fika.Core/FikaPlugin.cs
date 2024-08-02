@@ -91,7 +91,7 @@ namespace Fika.Core
         #region config values
 
         // Hidden
-        public static ConfigEntry<bool> AcceptedTOS { get; set; }
+        //public static ConfigEntry<bool> AcceptedTOS { get; set; }
 
         //Advanced
         public static ConfigEntry<bool> OfficialVersion { get; set; }
@@ -234,7 +234,6 @@ namespace Fika.Core
             gameObject.AddComponent<MainThreadDispatcher>();
 
 #if GOLDMASTER
-            new TOS_Patch().Enable();
 #endif
             OfficialVersion.SettingChanged += OfficialVersion_SettingChanged;
 
@@ -306,10 +305,10 @@ namespace Fika.Core
         private void SetupConfig()
         {
             // Hidden
-
-            AcceptedTOS = Config.Bind("Hidden", "Accepted TOS", false,
+            // Disabled for SerialBunny Build
+            /*AcceptedTOS = Config.Bind("Hidden", "Accepted TOS", false,
                 new ConfigDescription("Has accepted TOS", tags: new ConfigurationManagerAttributes() { Browsable = false }));
-
+            */ 
             // Advanced
 
             OfficialVersion = Config.Bind("Advanced", "Official Version", false,
