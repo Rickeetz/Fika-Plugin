@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../SPT-Backend"
+		},
+		{
+			"path": "../Build"
 		}
 	],
 	"tasks": {
@@ -20,39 +23,28 @@
 		},
 		"tasks": [
 			{
-				"label": "dotnet: restore",
+				"label": "Build Full Release",
 				"type": "shell",
-				"command": "dotnet restore --nologo",
+				"command": "./FullReleaseBuild.ps1",
+				"problemMatcher": []
 			},
 			{
-				"label": "dotnet: build debug",
+				"label": "Build SPT Backend",
 				"type": "shell",
-				"command": "dotnet build --nologo --no-restore --configuration Debug",
-				"dependsOrder": "sequence",
-				"dependsOn": "dotnet: restore",
-				"group": {
-					"kind": "build"
-				}
+				"command": "./BuildSPTBackendOnly.ps1",
+				"problemMatcher": []
 			},
 			{
-				"label": "dotnet: build release",
+				"label": "Build Fika Bephinex Plugin",
 				"type": "shell",
-				"command": "dotnet build --nologo  --no-restore --configuration Release",
-				"dependsOrder": "sequence",
-				"dependsOn": "dotnet: restore",
-				"group": {
-					"kind": "build"
-				}
+				"command": "./BuildBephinexPluginOnly.ps1",
+				"problemMatcher": []
 			},
 			{
-				"label": "dotnet: build gold-master",
+				"label": "Build Fika SPT-Plugin",
 				"type": "shell",
-				"command": "dotnet build --nologo  --no-restore --configuration GoldMaster",
-				"dependsOrder": "sequence",
-				"dependsOn": "dotnet: restore",
-				"group": {
-					"kind": "build"
-				}
+				"command": "./BuildFikaServerPluginOnly.ps1",
+				"problemMatcher": []
 			}
 		]
 	},
