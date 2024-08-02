@@ -25,7 +25,7 @@
 			{
 				"label": "Build Full Release",
 				"type": "shell",
-				"command": "./FullReleaseBuild.ps1",
+				"command": "./BuildEverything.ps1",
 				"problemMatcher": []
 			},
 			{
