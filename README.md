@@ -1,16 +1,3 @@
-# This Repo Branch is a Modification to the Original Project FIKA[https://github.com/project-fika/Fika-Plugin].
-
-Please, if you (for some goddamn reason) use this modified repository and encounter any errors, bugs, glitches, or if your computer catches fire, do not reach out to anyone (seek professional help if possible) whose name is in this repo.
-
-This code is modified by me, which means it was written with a banana at my side, a lot of ChatGPT code, and my monkey brain.
-
-I hereby grant NO, and I cannot emphasize this enough, ANY guarantee for either hardware, software, or brain damage you may incur from this code.
-
-Use it at your own risk.
-
-Discretion is advised.
-
-
 # Fika - Bepinex plugin
 
 [![Discord](https://img.shields.io/discord/1202292159366037545?style=plastic&logo=discord&logoColor=FFFFFF&label=Fika%20Discord)](https://discord.gg/project-fika)
@@ -20,45 +7,6 @@ Discretion is advised.
 [![License](https://img.shields.io/badge/CC--BY--NC--SA--4.0-blue?style=plastic&logo=creativecommons&logoColor=FFFFFF&label=License)](https://github.com/project-fika/Fika-Plugin/blob/main/LICENSE.md)
 
 Client-side changes to make multiplayer work.
-
-## State of the project
-
-There are few bugs left. The goal now is to look back and refactor old code to
-make it better, as a lot of it is not efficient or easy to read.
-
-## Contributing
-
-You are free to fork, improve and send PRs to improve the project. Please try
-to make your code coherent for the other developers.
-
-## Requirements
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [.NET SDK 8.0.x](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-
-## Setup
-
-1. Copy-paste the contents of `EscapeFromTarkov_Data/Managed/` into
-    `References/`
-2. Copy-paste from SPT.Modules `project/Shared/Hollowed/hollowed.dll` into
-    `References/`
-
-## Build
-
-### Debug / Release
-
-**Tool**   | **Action**
----------- | ------------------------------
-PowerShell | `dotnet build`
-VSCode     | `Terminal > Run Build Task...`
-
-You have to create a `References` folder and populate it with the required
-dependencies from your game installation for the project to build.
-
-### GoldMaster
-
-1. Have no certificates yet? > `Properties/signing/generate.bat`
-2. `dotnet build --configuration GoldMaster`
 
 ## Licenses
 
@@ -70,7 +18,20 @@ This project is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/lic
 
 **Project** | **License**
 ----------- | -----------------------------------------------------------------------
+Fika.Core   | [NCSA](https://dev.sp-tarkov.com/SPT/Modules/src/branch/master/LICENSE.md)
 SPT.Modules | [NCSA](https://dev.sp-tarkov.com/SPT/Modules/src/branch/master/LICENSE.md)
 SIT         | [NCSA](./LICENSE-SIT.md) (`Forked from SIT.Client master:9de30d8`)
 Open.NAT    | [MIT](https://github.com/lontivero/Open.NAT/blob/master/LICENSE) (for UPnP implementation)
 LiteNetLib  | [MIT](https://github.com/RevenantX/LiteNetLib/blob/master/LICENSE.txt) (for P2P UDP implementation)
+
+# This Repo Branch is a Modification to the Original Project FIKA[https://github.com/project-fika/Fika-Plugin].
+
+Please, if you (for some goddamn reason) use this modified repository and encounter any errors, bugs, glitches, or if your computer catches fire, do not reach out to anyone (seek professional help if possible) whose name is in this repo.
+
+This code is modified by me, which means it was written with a banana at my side, a lot of ChatGPT code, and my monkey brain.
+
+I hereby grant NO, and I cannot emphasize this enough, ANY guarantee for either hardware, software, or brain damage you may incur from this code.
+
+Use it at your own risk.
+
+Discretion is advised.
