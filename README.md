@@ -1,3 +1,16 @@
+# This Repo Branch is a Modification to the Original Project FIKA[https://github.com/project-fika/Fika-Plugin].
+
+Please, if you (for some goddamn reason) use this modified repository and encounter any errors, bugs, glitches, or if your computer catches fire, do not reach out to anyone (seek professional help if possible) whose name is in this repo.
+
+This code is modified by me, which means it was written with a banana at my side, a lot of ChatGPT code, and my monkey brain.
+
+I hereby grant NO, and I cannot emphasize this enough, ANY guarantee for either hardware, software, or brain damage you may incur from this code.
+
+Use it at your own risk.
+
+Discretion is advised.
+
+
 # Fika - Bepinex plugin
 
 [![Discord](https://img.shields.io/discord/1202292159366037545?style=plastic&logo=discord&logoColor=FFFFFF&label=Fika%20Discord)](https://discord.gg/project-fika)
