@@ -7,7 +7,10 @@
 			"path": "../Fika-Server"
 		},
 		{
-			"path": "../SPT-Backend"
+			"path": "../SPT-Backend/project"
+		},
+		{
+			"path": "../Build"
 		}
 	],
 	"tasks": {
@@ -20,39 +23,9 @@
 		},
 		"tasks": [
 			{
-				"label": "dotnet: restore",
+				"label": "Build Full Release",
 				"type": "shell",
-				"command": "dotnet restore --nologo",
-			},
-			{
-				"label": "dotnet: build debug",
-				"type": "shell",
-				"command": "dotnet build --nologo --no-restore --configuration Debug",
-				"dependsOrder": "sequence",
-				"dependsOn": "dotnet: restore",
-				"group": {
-					"kind": "build"
-				}
-			},
-			{
-				"label": "dotnet: build release",
-				"type": "shell",
-				"command": "dotnet build --nologo  --no-restore --configuration Release",
-				"dependsOrder": "sequence",
-				"dependsOn": "dotnet: restore",
-				"group": {
-					"kind": "build"
-				}
-			},
-			{
-				"label": "dotnet: build gold-master",
-				"type": "shell",
-				"command": "dotnet build --nologo  --no-restore --configuration GoldMaster",
-				"dependsOrder": "sequence",
-				"dependsOn": "dotnet: restore",
-				"group": {
-					"kind": "build"
-				}
+				"command": "./FullReleaseBuild.ps1",
 			}
 		]
 	},
