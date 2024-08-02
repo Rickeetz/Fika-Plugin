@@ -1,51 +1,20 @@
-# Fika - Bepinex plugin
+# ⚠️ Unofficial Repository Notice ⚠️
 
-[![Discord](https://img.shields.io/discord/1202292159366037545?style=plastic&logo=discord&logoColor=FFFFFF&label=Fika%20Discord)](https://discord.gg/project-fika)
-[![Downloads](https://img.shields.io/github/downloads/project-fika/Fika-Plugin/total?style=plastic&logo=github)](https://github.com/project-fika/Fika-Plugin/releases/latest)
-![Size](https://img.shields.io/github/languages/code-size/project-fika/Fika-Plugin?style=plastic&logo=github)
-![Issues](https://img.shields.io/github/issues/project-fika/Fika-Plugin?style=plastic&logo=github)
-[![License](https://img.shields.io/badge/CC--BY--NC--SA--4.0-blue?style=plastic&logo=creativecommons&logoColor=FFFFFF&label=License)](https://github.com/project-fika/Fika-Plugin/blob/main/LICENSE.md)
+⚠️ This repository is not maintained by FIKA or SPT. ⚠️  
+⚠️ There will be absolutely no support for this repository and its contents. YOU ARE ON YOUR OWN! ⚠️  
+⚠️ DO NOT TRY TO CONTACT THE ORIGINAL PROGRAMMERS/CONTRIBUTORS IF YOU NEED SUPPORT WHILE USING THIS CODE. ⚠️
 
-Client-side changes to make multiplayer work.
+If you are looking for the official builds of these projects, please visit:
 
-## State of the project
+- [SPT](https://sp-tarkov.com/)
+- [FIKA](https://github.com/project-fika)
 
-There are few bugs left. The goal now is to look back and refactor old code to
-make it better, as a lot of it is not efficient or easy to read.
+# Contributors
 
-## Contributing
+- Fika Team
+- SPT Team
 
-You are free to fork, improve and send PRs to improve the project. Please try
-to make your code coherent for the other developers.
-
-## Requirements
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [.NET SDK 8.0.x](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-
-## Setup
-
-1. Copy-paste the contents of `EscapeFromTarkov_Data/Managed/` into
-    `References/`
-2. Copy-paste from SPT.Modules `project/Shared/Hollowed/hollowed.dll` into
-    `References/`
-
-## Build
-
-### Debug / Release
-
-**Tool**   | **Action**
----------- | ------------------------------
-PowerShell | `dotnet build`
-VSCode     | `Terminal > Run Build Task...`
-
-You have to create a `References` folder and populate it with the required
-dependencies from your game installation for the project to build.
-
-### GoldMaster
-
-1. Have no certificates yet? > `Properties/signing/generate.bat`
-2. `dotnet build --configuration GoldMaster`
+Thank you to everyone for these awesome projects!
 
 ## Licenses
 
