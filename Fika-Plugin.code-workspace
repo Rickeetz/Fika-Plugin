@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../Fika-Server"
+		},
+		{
+			"path": "../SPT-Backend"
 		}
 	],
 	"tasks": {
